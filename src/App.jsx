@@ -1,16 +1,10 @@
 import "./App.css"
-import Card from "./Card.jsx";
-
-function Description() {
-  return <h3>I am the Description!</h3>;
-}
+import CardTab from "./CardTab.jsx";
 
 function App() {
   return (
     <>
-      <Card />
-      <Card />
-      <Card />
+      <CardTab />
     </>
   );
 }
