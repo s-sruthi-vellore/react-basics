@@ -2,11 +2,11 @@ import Title from "./CardTitle.jsx";
 import Description from "./CardDesc.jsx";
 import "./Card.css";
 
-function Card() {
+function Card({title = "default title", description ="default desc"}) {
   return (
     <div id="card">
-      <Title />
-      <Description />
+      <Title title={title} />
+      <Description description = {description} />
     </div>
   );
 }

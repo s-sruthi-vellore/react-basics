@@ -4,8 +4,9 @@ function CardTab()
 {
     return (
         <>
-            <Card />
-            <Card />
+            <Card title="React" description="Learn React props"/>
+            <Card title="Python" description="learn data structures"/>
+            <Card title="Git" description="Learn version control" />
             <Card />
         </>
     );

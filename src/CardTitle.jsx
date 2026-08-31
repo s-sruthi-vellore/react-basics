@@ -1,7 +1,7 @@
-function Title() {
+function Title({title}) {
     return (
         <div>
-            <h1>This is title!!</h1>
+            <h1>{title}</h1>
         </div>
     )
 }

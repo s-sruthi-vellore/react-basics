@@ -1,7 +1,7 @@
-function Description() {
+function Description({description}) {
     return (
         <div>
-            <p>This is a description.</p>
+            <p>{description}</p>
         </div>
     );
 }
