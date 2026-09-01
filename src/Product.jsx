@@ -6,7 +6,12 @@ function Product({ productName, price, features }) {
             <div className="details">
                 <h3>{productName}</h3>
                 <p>Price: {price}</p>
-                {features && <ul className="features">{list}</ul>}
+                {price >= 10000 ? <p>Discount of 5% </p> : null}
+                {features &&
+                    <p> <b>Features: </b> 
+                        <ul className="features">{list}</ul>
+                    </p>
+                }
             </div>
         </>
     );
