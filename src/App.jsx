@@ -1,10 +1,10 @@
 import "./App.css"
-import CardTab from "./CardTab.jsx";
-
+import ProductTab from "./ProductTab.jsx";
+import "./Product.css";
 function App() {
   return (
     <>
-      <CardTab />
+      <ProductTab />
     </>
   );
 }
