@@ -1,17 +1,13 @@
 import "./Product.css";
-function Product({ productName, price, features }) {
-    const list = features?.map((feature) => <li>{feature}</li>);
+function Product({ productName, price }) {
+    let isDiscount = price >= 10000;
+    let styles = { backgroundColor: isDiscount ? "yellow" : "" };
     return (
         <>
-            <div className="details">
+            <div className="details" style={styles}>
                 <h3>{productName}</h3>
                 <p>Price: {price}</p>
-                {price >= 10000 ? <p>Discount of 5% </p> : null}
-                {features &&
-                    <p> <b>Features: </b> 
-                        <ul className="features">{list}</ul>
-                    </p>
-                }
+                {isDiscount && <p>Discount of 5% </p>}
             </div>
         </>
     );
